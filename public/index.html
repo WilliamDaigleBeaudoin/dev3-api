@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <title>Meme</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Méthode</th>
+      <th>URL</th>
+      <th>Entrer</th>
+      <th>Sortie</th>
+    </tr>
+    
+    <tr>
+      <td>POST</td>
+      <td>/memes/<br><p>Crée un meme </p></td>
+      <td>Un meme sans id</td>
+      <td>Un meme complet</td>
+    </tr>
+    
+    <tr>
+      <td>DELETE</td>
+      <td>/memes/{id}<br><p>Éfface un meme a partire de son ID</p></td>
+      <td>☻</td>
+      <td>Si ça marcher et combien de meme éffacer</td>
+    </tr>    
+
+    <tr>
+      <td>GET</td>
+      <td>/memes<br><p>Accède à tout les memes</p></td>
+      <td>☻</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/memes/{id}<br><p>Accède à un meme a partire de son ID</p></td>
+      <td>☻</td>
+      <td>Toute les informations du meme sélectionner</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/memes/favorie<br><p>Accède aux meme favorie</p></td>
+      <td>☻</td>
+      <td>Le meme et son nombre de click</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/memes/tags/{tag}<br><p>Accède aux meme ayant le tag</p></td>
+      <td>☻</td>
+      <td>Le meme et son nom</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/memes/total/tags<br><p>Accède aux tags avec leurs nombre de meme ayant le tag</p></td>
+      <td>☻</td>
+      <td>Le tag et le nombre d'élement</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/memes/moyenne/click/theme<br><p>Accède a la moyenne de click par theme</p></td>
+      <td>☻</td>
+      <td>Le theme et la moyenne</td>
+    </tr>
+
+    <tr>
+      <td>PUT</td>
+      <td>/memes/{id}<br><p>Modifie un meme existant</p></td>
+      <td>Les nouvelle info du meme </td>
+      <td>Si ça marcher et combien de meme a été updater</td>
+    </tr>
+    
+  </table>
+
+<p>Modèle d'un meme</p>
+{<br>
+  "_id": "6380d6559f19e57a4a7b5ca9",<br>
+  "nom": "panik meme",<br>
+  "nombre_de_click": 69,<br>
+  "annee_de_creation": "2000-06-01T00:00:00.000Z",<br>
+  "favorie": true,<br>
+  "tags": [<br>
+      "relatable",<br>
+      "simple"<br>
+  ],<br>
+  "meme_similare": [],<br>
+  "template": "https://en.meming.world/images/en/7/79/Panik_Kalm.jpg",<br>
+  "image": "https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F001%2F798%2F936%2Ffe7.jpg",<br>
+  "like": 0,<br>
+  "dislike": 0,<br>
+  "theme": "Meme Man"<br>
+}
+
+
+</body>
+
+</html>
